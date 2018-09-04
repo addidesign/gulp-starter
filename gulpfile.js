@@ -79,11 +79,13 @@ gulp.task('default', ['browser-sync', 'watch']);
 // Prepare Browser-sync
 gulp.task('browser-sync', function() {
     bs.init({
-		serveStatic: [{
-	        route: '/public',
-	        dir: 'public'
-		 }],
-        port: port, // If you run 'gulp' and the page just times out try changing this to a different port
+		server: {
+		    baseDir: "./",
+		    serveStaticOptions: {
+		        extensions: ["html"]
+		    }
+		},
+        port: 3000, // If you run 'gulp' and the page just times out try changing this to a different port
         injectChanges: true
     });
 
