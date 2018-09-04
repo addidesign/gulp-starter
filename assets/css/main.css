@@ -14,8 +14,11 @@ body {
 	align-items: center;
 	background-color: #cf4647;
 	width: 50%;
+	min-width: 400px;
 	height: 50%;
 	color: white;
+	padding: 40px;
+	text-align: center;
 }
 
 h1 {
