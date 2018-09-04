@@ -1,0 +1,32 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "getting started with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addidesign/gulp-starter.git"
+  },
+  "author": "Adam Ward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addidesign/gulp-starter/issues"
+  },
+  "homepage": "https://github.com/addidesign/gulp-starter#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-size": "^2.0.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}
