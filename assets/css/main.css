@@ -1,0 +1,31 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open sans';
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: crimson;
+	width: 50%;
+	height: 50%;
+	color: white;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 20px;
+}
+
+img {
+	max-width: 80px;
+}
