@@ -3,10 +3,6 @@
 // Project Variables
 // -----------------------------------------------------
 
-
-// BrowserSync Port
-var port = 3000;
-
 // Styles
 var style_dest = 'assets/css/';
 
@@ -17,19 +13,13 @@ var scripts_src = 'assets/js/*.js',
     scripts_file = 'scripts.js';
 
 // Images
-var images_src = 'assets/images/raw/*',
-    images_dest = 'assets/images/';
+var images_src = 'assets/img/*',
+    images_dest = 'assets/img/';
 
 // Watch
 var style_watch = 'assets/sass/**/*.scss',
     scripts_watch = 'assets/js/*.js',
-    php_watch = '*.php',
-    html_watch = '*.html',
-    twig_watch = 'views/**/*.twig';
-
-// Cache asset routes
-var assets_src = './assets';
-var assets_dest = './assets/build';
+    html_watch = '*.html';
 
 // Autoprefixer
 // Browserlist https://github.com/ai/browserslist
@@ -110,11 +100,6 @@ gulp.task('minify-css', function() {
         }))
         .on('error', reportStyleError)
         .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-
-        .pipe(mmq({
-            log: true
-        })) // Merge Media Queries only for .min.css version.
         .pipe(rename({
             suffix: '.min'
         })) // rename the file with .min
@@ -205,5 +190,5 @@ gulp.task('watch', function() {
     gulp.watch(style_dest + '/min/main.min.css');
     gulp.watch(scripts_dest + '*.js');
     // Watch all other files and reload browser
-    gulp.watch([html_watch, php_watch, twig_watch], ['reload']);
+    gulp.watch(html_watch, ['reload']);
 });
