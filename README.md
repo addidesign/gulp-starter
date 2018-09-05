@@ -17,7 +17,7 @@ Otherwise, this is a [great guide](https://www.npmjs.com/get-npm) for getting se
 When you have Node and NPM installed you should be able to run the following command, to get the versions you have installed - 
 
 ```
-node -v && npm -v
+$ node -v && npm -v
 ```
 
 ### Installing Gulp
@@ -52,7 +52,7 @@ This command will tell NPM to look at the 'package.json' file and download each 
 ```
 $ gulp
 ```
-You should see from the terminal the Gulp has started up and started running tasks, one of these task is for Browsersync, which is a really useful tool, that allows you to inject style changes istantly, which is great when your styling up a website. It also give you an 'UI' url where you can change the browsersync settings and an 'External' url, which other devices connect to the same WiFi network can also use. It shows the updates on all the devices with hardly any delay and can also mirror your scroll and click interactions, which is great for testing on tablets and mobile devices.
+You should see from the terminal that Gulp has started up and is running tasks. One of these task is for Browsersync, which is a really useful tool, that allows you to inject style changes istantly - great for when your styling up a website. It also gives you an 'UI' url where you can change the browsersync settings and an 'External' url, which other devices that are connected to the same WiFi network can also use. It shows the updates on all the devices with hardly any delay and can also mirror your scroll and click interactions, which is great for testing on tablets and mobile devices.
 
 
  
