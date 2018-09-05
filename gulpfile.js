@@ -43,7 +43,7 @@ const AUTOPREFIXER_BROWSERS = [
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    minifycss = require('gulp-uglifycss'); // Minifies CSS files.
+    minifycss = require('gulp-cssnano'); // Minifies CSS files.
 	autoprefixer = require('gulp-autoprefixer'); // Autoprefixing magic.
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
